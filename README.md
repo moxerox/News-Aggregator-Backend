@@ -32,3 +32,6 @@ php artisan serve
 ```
 
 Open your browser and visit http://localhost:8000 to see your Laravel application in action.
+
+## Frontend Repo
+You can find the React.js frontend application [here](https://github.com/moxerox/News-Aggregator-Frontend)
