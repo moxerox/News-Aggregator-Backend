@@ -34,13 +34,11 @@ class SetupCommand extends Command
         $this->installPassport();
         $this->info('Passport installed');
 
-//        $this->comment('Seeding Database');
-//        $this->resetMigrations();
-//        $this->info('Seed Completed');
     }
 
     public function resetMigrations()
     {
+        Artisan::call('key:generate');
         Artisan::call('migrate:fresh --seed');
     }
 
